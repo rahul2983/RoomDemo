@@ -18,19 +18,19 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding?.root)
         val employeeDao = (application as EmployeeApp).db.employeeDao()
-        binding?.btnAdd?.setOnClickListener(){
+        binding?.btnAdd?.setOnClickListener {
             addRecord(employeeDao)
         }
 
         lifecycleScope.launch {
-            employeeDao.fetchAllEmployees().collect(){
+            employeeDao.fetchAllEmployees().collect{
                 val list = ArrayList(it)
                 setupListOfDataIntoRecyclerView(list, employeeDao)
             }
         }
     }
 
-    fun addRecord(employeeDao: EmployeeDao) {
+    private fun addRecord(employeeDao: EmployeeDao) {
         val name = binding?.etName?.text.toString()
         val email = binding?.etEmailId?.text.toString()
 
