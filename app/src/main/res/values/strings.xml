@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">RoomDemo</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="email_id">Email ID</string>
+    <string name="enter_email_id">Enter Email ID</string>
+    <string name="add_record">ADD RECORD</string>
+    <string name="all_the_inserted_records">All the inserted records.</string>
+    <string name="no_records_available">No records available!!!</string>
 </resources>

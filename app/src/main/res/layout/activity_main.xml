@@ -15,7 +15,7 @@
         android:id="@+id/tvNameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name"
+        android:text="@string/name"
         android:textSize="18sp" />
 
     <EditText
@@ -26,7 +26,7 @@
         android:id="@+id/etName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Enter Name" />
+        android:hint="@string/enter_name" />
 
     <TextView
         app:layout_constraintEnd_toStartOf="@id/etEmailId"
@@ -36,7 +36,7 @@
         android:id="@+id/tvEmailLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email ID"
+        android:text="@string/email_id"
         android:textSize="18sp" />
 
     <EditText
@@ -48,7 +48,7 @@
         android:layout_marginStart="8dp"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:hint="Enter Email ID" />
+        android:hint="@string/enter_email_id" />
 
 
     <Button
@@ -56,7 +56,7 @@
         android:id="@+id/btnAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ADD RECORD" />
+        android:text="@string/add_record" />
 
     <TextView
         android:layout_margin="10dp"
@@ -65,7 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="All the inserted records."
+        android:text="@string/all_the_inserted_records"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -86,7 +86,7 @@
         app:layout_constraintTop_toBottomOf="@id/btnAdd"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="No records available!!!"
+        android:text="@string/no_records_available"
         android:textSize="18sp"
         android:visibility="visible"
         tools:visibility="visible" />
